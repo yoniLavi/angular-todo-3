@@ -38,6 +38,8 @@ angular.module('RouteControllers', [])
 	})
 	.controller('LoginController', function($scope, $location, UserService, store) {
 		var url = "https://morning-castle-91468.herokuapp.com/";
+	
+		$scope.loginUser = {};
 
 		$scope.submitForm = function() {
 			if ($scope.loginForm.$valid) {
